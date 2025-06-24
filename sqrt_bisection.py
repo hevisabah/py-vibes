@@ -16,6 +16,8 @@ def square_root_bisection(square_target, tolerance=1e-7, max_iterations=100):
         low = 0
         high = max(square_target, 1)
         root = None
+
+        # Start the bisection method loop, with a maximum number of iterations🔥
         for _ in range(max_iterations):
             mid = (low + high) / 2
             square_mid = mid ** 2
